@@ -502,7 +502,7 @@ img {
 }
 
 .about-us {
-  background-image: url("../../images/about-us-bg.png");
+  background-image: url("../images/about-us-bg.png");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
