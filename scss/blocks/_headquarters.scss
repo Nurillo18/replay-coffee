@@ -1,0 +1,129 @@
+.headquarters{
+    padding-left: 85px;
+    margin-bottom: 168px;
+}
+
+.headquarters__title{
+    margin: 0;
+    padding: 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    color: #83888F;
+    margin-bottom: 72px;
+}
+
+.headquarters__title-head{
+    margin: 0;
+    padding: 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+.headquarters__adress{
+    margin-top: 25px;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.headquarters__list{
+    list-style-type: none;
+    display: flex;
+}
+
+.headquarters__item{
+    display: flex;
+    flex-direction: column;
+
+
+    &:not(:last-child){
+        margin-right: 125px;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        background-image: url("../images/kingdom.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 40px;
+        height: 50px;
+        margin-bottom: 45px;
+    }
+
+
+    &:nth-child(2)::before{
+        content: '';
+        display: block;
+        background-image: url("../images/canada.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 51px;
+        height: 50px;
+    }
+
+    &:nth-child(3)::before{
+        content: '';
+        display: block;
+        background-image: url("../images/australia.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 49px;
+        height: 44px;
+    }
+}
+.headquarters__tel{
+    text-decoration: none;
+    color: #333D4B;
+}
+
+@media only screen and (max-width:990px){
+    .headquarters{
+        padding: 0;
+    }
+    .headquarters__nav{
+        margin-left: -38px;
+    }
+    .headquarters__list{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width:710px){
+    .headquarters__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headquarters__list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .headquarters__item{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & + & {
+            margin-top: 80px;
+        }
+    }
+
+
+
+    .third-item{
+        margin-left: -128px;
+    }
+}
